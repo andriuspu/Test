@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountCurrent" xml:space="preserve">
+    <value>Current Account</value>
+  </data>
+  <data name="AccountCurrentPlus" xml:space="preserve">
+    <value>Current Account Plus</value>
+  </data>
+  <data name="AccountJuniorSaver" xml:space="preserve">
+    <value>Junior Saver Account</value>
+  </data>
+  <data name="AccountStudent" xml:space="preserve">
+    <value>Student Account</value>
+  </data>
+  <data name="BundleClassic" xml:space="preserve">
+    <value>Classic</value>
+  </data>
+  <data name="BundleClassicPlus" xml:space="preserve">
+    <value>Classic Plus</value>
+  </data>
+  <data name="BundleGold" xml:space="preserve">
+    <value>Gold</value>
+  </data>
+  <data name="BundleIsNotSuitedForThisCustomer" xml:space="preserve">
+    <value>Bundle is not suited for this customer</value>
+  </data>
+  <data name="BundleJuniorSaver" xml:space="preserve">
+    <value>Junior Saver</value>
+  </data>
+  <data name="BundleStudent" xml:space="preserve">
+    <value>Student</value>
+  </data>
+  <data name="CardCredit" xml:space="preserve">
+    <value>Credit card</value>
+  </data>
+  <data name="CardDebit" xml:space="preserve">
+    <value>Debit card</value>
+  </data>
+  <data name="CardGoldCredit" xml:space="preserve">
+    <value>Gold Credit card</value>
+  </data>
+  <data name="CustomerAgeIsNotSupplied" xml:space="preserve">
+    <value>Customer age is not supplied</value>
+  </data>
+  <data name="CustomerAnswersAreNotSupplied" xml:space="preserve">
+    <value>Customer answers are not supplied</value>
+  </data>
+  <data name="CustomerCantHaveMoreThanOneAccount" xml:space="preserve">
+    <value>Customer can't have more than one account</value>
+  </data>
+  <data name="CustomerIncomeIsNotSupplied" xml:space="preserve">
+    <value>Customer income is not supplied</value>
+  </data>
+  <data name="CustomerNameIsNotSupplied" xml:space="preserve">
+    <value>Customer name is not supplied</value>
+  </data>
+  <data name="DebitCardCanNotBeAddedBecauseNoAccountWasFoundForThisCustomer" xml:space="preserve">
+    <value>Debit card can not be added because no account was found for this customer</value>
+  </data>
+  <data name="NoBundleFoundBySuchName" xml:space="preserve">
+    <value>No bundle found by such name</value>
+  </data>
+  <data name="ProductIsNotSuitableForThisCustomer" xml:space="preserve">
+    <value>Product is not suitable for this customer</value>
+  </data>
+  <data name="ProductsNotSuitedForBundle" xml:space="preserve">
+    <value>The bundle includes products, which are not suited for this customer. These products are: {0}</value>
+  </data>
+  <data name="RequestedBundleIsSuitableForThisCustomer" xml:space="preserve">
+    <value>Requested bundle is suitable for this customer</value>
+  </data>
+  <data name="RuleAgeLessThan18" xml:space="preserve">
+    <value>Age &lt; 18</value>
+  </data>
+  <data name="RuleAgeMoreThan17" xml:space="preserve">
+    <value>Age &gt; 17</value>
+  </data>
+  <data name="RuleIncomeMoreThan0" xml:space="preserve">
+    <value>Income &gt; 0</value>
+  </data>
+  <data name="RuleIncomeMoreThan12000" xml:space="preserve">
+    <value>Income &gt; 12000</value>
+  </data>
+  <data name="RuleIncomeMoreThan40000" xml:space="preserve">
+    <value>Income &gt; 40000</value>
+  </data>
+  <data name="RuleIsStudent" xml:space="preserve">
+    <value>Student = Yes</value>
+  </data>
+  <data name="ThereIsNoSuitableBundle" xml:space="preserve">
+    <value>There is no suitable bundle</value>
+  </data>
+  <data name="UnhandledErrorHasOccured" xml:space="preserve">
+    <value>Unhandled error has occured</value>
+  </data>
+</root>

@@ -1,0 +1,107 @@
+﻿<style>
+    select, input[type="text"]
+    {
+        width: 200px;
+        height: 26px;
+    }
+</style>
+
+<br />
+<table>
+    <tr>
+        <td>Name: </td>
+        <td><input type="text" id="Name" /></td>
+    </tr>
+    <tr>
+        <td>Age: </td>
+        <td>
+            <select id="AgeId">
+                <option value="1">0 - 17</option>
+                <option value="2">18 - 64</option>
+                <option value="3">65 +</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Income: </td>
+        <td>
+            <select id="IncomeId">
+                <option value="1">0</option>
+                <option value="2">1 - 12000</option>
+                <option value="3">12001 - 40000</option>
+                <option value="4">40001 +</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Student: </td>
+        <td><input type="checkbox" id="IsStudent" /></td>
+    </tr>
+</table>
+<input type="button" id="getBundleWithBiggestValue" value="Get bundle" />
+<br /><br />
+<input type="button" id="match" value="Match" />
+
+<select id="BundleId">
+    <option value="1">Junior Saver</option>
+    <option value="2">Student</option>
+    <option value="3">Classic</option>
+    <option value="4">Classic Plus</option>
+    <option value="5">Gold</option>
+</select>
+
+@section scripts{
+
+    <script>
+        $('#getBundleWithBiggestValue').click(function (e) {
+            e.preventDefault();
+
+            var customer = {
+                Name: $('#Name').val(),
+                AgeId: $('#AgeId').val(),
+                IncomeId: $('#IncomeId').val(),
+                IsStudent: $('#IsStudent').is(":checked")
+            };
+
+            $.ajax({
+                method: "POST",
+                url: "/api/rule",
+                data: customer
+            })
+            .done(function (msg) {
+                alert("Recomended Bundle: " + msg.Name);
+            })
+            .fail(function (response) {
+                var data = JSON.parse(response.responseText);
+                alert("Error: " + data);
+            });
+        });
+
+        $('#match').click(function (e) {
+            e.preventDefault();
+
+            var customer = {
+                Name: $('#Name').val(),
+                AgeId: $('#AgeId').val(),
+                IncomeId: $('#IncomeId').val(),
+                IsStudent: $('#IsStudent').is(":checked")
+            }
+
+            var bundleId = $('#BundleId').val();
+
+            $.ajax({
+                method: "POST",
+                url: "/api/match",
+                data: { customer: customer, bundleId: bundleId }
+
+            })
+            .done(function (msg) {
+                alert(msg);
+            })
+            .fail(function (response) {
+                var data = JSON.parse(response.responseText);
+                alert("Error: " + data);
+            });
+        });
+    </script>
+}

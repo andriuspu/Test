@@ -1,0 +1,11 @@
+c:\Users\andriuspu\documents\visual studio 2015\Projects\Bundles\Business\bin\Debug\Business.dll
+c:\Users\andriuspu\documents\visual studio 2015\Projects\Bundles\Business\bin\Debug\Business.pdb
+c:\Users\andriuspu\documents\visual studio 2015\Projects\Bundles\Business\bin\Debug\Data.dll
+c:\Users\andriuspu\documents\visual studio 2015\Projects\Bundles\Business\bin\Debug\Data.pdb
+c:\Users\andriuspu\documents\visual studio 2015\Projects\Bundles\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+c:\Users\andriuspu\documents\visual studio 2015\Projects\Bundles\Business\obj\Debug\Business.dll
+c:\Users\andriuspu\documents\visual studio 2015\Projects\Bundles\Business\obj\Debug\Business.pdb
+C:\Users\andriuspu\Documents\Visual Studio 2015\Projects\Bundles\Business\bin\Debug\Dapper.dll
+C:\Users\andriuspu\Documents\Visual Studio 2015\Projects\Bundles\Business\bin\Debug\Dapper.xml
+C:\Users\andriuspu\Documents\Visual Studio 2015\Projects\Bundles\Business\bin\Debug\Globalization.dll
+C:\Users\andriuspu\Documents\Visual Studio 2015\Projects\Bundles\Business\bin\Debug\Globalization.pdb

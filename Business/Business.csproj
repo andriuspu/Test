@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{775C1ACB-1FA0-4D3A-8A4A-92154CDFC4BA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Business</RootNamespace>
+    <AssemblyName>Business</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Factories\IBundleFactory.cs" />
+    <Compile Include="Factories\IProductFactory.cs" />
+    <Compile Include="Factories\ProductFactory.cs" />
+    <Compile Include="Factories\BundleFactory.cs" />
+    <Compile Include="Enums\ProductEnum.cs" />
+    <Compile Include="Enums\BundleEnum.cs" />
+    <Compile Include="Entities\Bundles\Bundle.cs" />
+    <Compile Include="Entities\Bundles\GoldBundle.cs" />
+    <Compile Include="Entities\Bundles\ClassicPlusBundle.cs" />
+    <Compile Include="Entities\Bundles\ClassicBundle.cs" />
+    <Compile Include="Entities\Bundles\StudentBundle.cs" />
+    <Compile Include="Entities\Bundles\JuniorSaverBundle.cs" />
+    <Compile Include="Entities\Products\DebitCardProduct.cs" />
+    <Compile Include="Entities\Products\GoldCreditCardProduct.cs" />
+    <Compile Include="Entities\Products\CurrentAccountPlusProduct.cs" />
+    <Compile Include="Entities\Products\CreditCardProduct.cs" />
+    <Compile Include="Entities\Products\StudentAccountProduct.cs" />
+    <Compile Include="Entities\Products\JuniorSaverAccountProduct.cs" />
+    <Compile Include="Entities\Products\CurrentAccountProduct.cs" />
+    <Compile Include="Entities\Products\Product.cs" />
+    <Compile Include="Enums\IncomeEnum.cs" />
+    <Compile Include="Enums\AgeEnum.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{438d9e51-abf4-41cc-8e94-20dafb434c42}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Globalization\Globalization.csproj">
+      <Project>{cd89564a-429e-4454-8d7b-05b226dc2465}</Project>
+      <Name>Globalization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

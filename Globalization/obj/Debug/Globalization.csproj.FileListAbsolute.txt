@@ -1,0 +1,7 @@
+C:\Users\andriuspu\Documents\Visual Studio 2015\Projects\Bundles\Globalization\bin\Debug\Globalization.dll
+C:\Users\andriuspu\Documents\Visual Studio 2015\Projects\Bundles\Globalization\bin\Debug\Globalization.pdb
+C:\Users\andriuspu\Documents\Visual Studio 2015\Projects\Bundles\Globalization\obj\Debug\Globalization.Rule.resources
+C:\Users\andriuspu\Documents\Visual Studio 2015\Projects\Bundles\Globalization\obj\Debug\Globalization.csproj.GenerateResource.Cache
+C:\Users\andriuspu\Documents\Visual Studio 2015\Projects\Bundles\Globalization\obj\Debug\Globalization.dll
+C:\Users\andriuspu\Documents\Visual Studio 2015\Projects\Bundles\Globalization\obj\Debug\Globalization.pdb
+C:\Users\andriuspu\Documents\Visual Studio 2015\Projects\Bundles\Globalization\obj\Debug\Globalization.csprojResolveAssemblyReference.cache
